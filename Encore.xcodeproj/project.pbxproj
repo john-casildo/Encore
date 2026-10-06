@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1000001 /* EncoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001 /* EncoreApp.swift */; };
+		B1000002 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000002 /* AuthManager.swift */; };
+		B1000003 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000003 /* LanguageManager.swift */; };
+		B1000004 /* SupabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000004 /* SupabaseClient.swift */; };
+		B1000005 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000005 /* StorageService.swift */; };
+		B1000006 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000006 /* Models.swift */; };
+		B1000007 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000007 /* AuthView.swift */; };
+		B1000008 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000008 /* BrowseView.swift */; };
+		B1000009 /* MyRentalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000009 /* MyRentalsView.swift */; };
+		B100000A /* RenterProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000A /* RenterProfileView.swift */; };
+		B100000B /* RenterTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000B /* RenterTabView.swift */; };
+		B100000C /* HostDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000C /* HostDashboardView.swift */; };
+		B100000D /* HostListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000D /* HostListingsView.swift */; };
+		B100000E /* HostBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000E /* HostBookingsView.swift */; };
+		B100000F /* HostProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000F /* HostProfileView.swift */; };
+		B1000010 /* HostTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000010 /* HostTabView.swift */; };
+		B1000011 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000011 /* Extensions.swift */; };
+		B1000012 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000012 /* Strings.swift */; };
+		B1000014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1000014 /* Assets.xcassets */; };
+		B1000015 /* InstrumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000015 /* InstrumentDetailView.swift */; };
+		B1000016 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000016 /* CheckoutView.swift */; };
+		B1000017 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000017 /* RatingsView.swift */; };
+		B1000018 /* ReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000018 /* ReviewsListView.swift */; };
+		B1000019 /* AddInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000019 /* AddInstrumentView.swift */; };
+		B100001A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100001A /* MessagesView.swift */; };
+		B100001B /* HostInsightsPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100001B /* HostInsightsPlaceholderView.swift */; };
+		B100001C /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100001C /* FavoritesStore.swift */; };
+		B100001D /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100001D /* FavoritesView.swift */; };
+		B100001E /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100001E /* EditProfileView.swift */; };
+		B100001F /* PlaceholderSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100001F /* PlaceholderSettingsView.swift */; };
+		B1000020 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000020 /* ConversationView.swift */; };
+		B1000021 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000021 /* HelpView.swift */; };
+		B1000022 /* PrivacySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000022 /* PrivacySettingsView.swift */; };
+		B1000023 /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000023 /* LegalView.swift */; };
+		B1000024 /* UserReviewFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000024 /* UserReviewFormView.swift */; };
+		B1000025 /* UserReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000025 /* UserReviewsListView.swift */; };
+		B1000026 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000026 /* LocationManager.swift */; };
+		B1000027 /* CountryCodePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000027 /* CountryCodePickerView.swift */; };
+		B1000028 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000028 /* ToastView.swift */; };
+		B1000029 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000029 /* ThemeManager.swift */; };
+		B100002A /* ListingsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100002A /* ListingsCache.swift */; };
+		B100002B /* EditInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100002B /* EditInstrumentView.swift */; };
+		B100002C /* EditRentalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100002C /* EditRentalView.swift */; };
+		B100002D /* MemphisIllustrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100002D /* MemphisIllustrations.swift */; };
+		B100002E /* RentalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100002E /* RentalDetailView.swift */; };
+		B100002F /* LocationChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100002F /* LocationChipView.swift */; };
+		B1000030 /* CheckoutHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000030 /* CheckoutHelpers.swift */; };
+		B2000001 /* AppUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000001 /* AppUserTests.swift */; };
+		B2000002 /* ModelsCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000002 /* ModelsCodableTests.swift */; };
+		B2000003 /* CheckoutHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000003 /* CheckoutHelpersTests.swift */; };
+		B2000004 /* CountryDialCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000004 /* CountryDialCodeTests.swift */; };
+		B2000005 /* LocationChipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000005 /* LocationChipTests.swift */; };
+		B2000006 /* ColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000006 /* ColorHexTests.swift */; };
+		B2000007 /* RoundedCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000007 /* RoundedCornerTests.swift */; };
+		B2000008 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000008 /* MockURLProtocol.swift */; };
+		B2000009 /* SupabaseClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000009 /* SupabaseClientTests.swift */; };
+		B200000B /* XCTest in Frameworks */ = {isa = PBXBuildFile; fileRef = F200000B /* XCTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E1000000 /* Encore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1000001 /* EncoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoreApp.swift; sourceTree = "<group>"; };
+		F1000002 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		F1000003 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		F1000004 /* SupabaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClient.swift; sourceTree = "<group>"; };
+		F1000005 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		F1000006 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F1000007 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		F1000008 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		F1000009 /* MyRentalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRentalsView.swift; sourceTree = "<group>"; };
+		F100000A /* RenterProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenterProfileView.swift; sourceTree = "<group>"; };
+		F100000B /* RenterTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenterTabView.swift; sourceTree = "<group>"; };
+		F100000C /* HostDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostDashboardView.swift; sourceTree = "<group>"; };
+		F100000D /* HostListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListingsView.swift; sourceTree = "<group>"; };
+		F100000E /* HostBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostBookingsView.swift; sourceTree = "<group>"; };
+		F100000F /* HostProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostProfileView.swift; sourceTree = "<group>"; };
+		F1000010 /* HostTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostTabView.swift; sourceTree = "<group>"; };
+		F1000011 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F1000012 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F1000013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1000014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1000015 /* InstrumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailView.swift; sourceTree = "<group>"; };
+		F1000016 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		F1000017 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		F1000018 /* ReviewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListView.swift; sourceTree = "<group>"; };
+		F1000019 /* AddInstrumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInstrumentView.swift; sourceTree = "<group>"; };
+		F100001A /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		F100001B /* HostInsightsPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostInsightsPlaceholderView.swift; sourceTree = "<group>"; };
+		F100001C /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
+		F100001D /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		F100001E /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		F100001F /* PlaceholderSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSettingsView.swift; sourceTree = "<group>"; };
+		F1000020 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		F1000021 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		F1000022 /* PrivacySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsView.swift; sourceTree = "<group>"; };
+		F1000023 /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
+		F1000024 /* UserReviewFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewFormView.swift; sourceTree = "<group>"; };
+		F1000025 /* UserReviewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewsListView.swift; sourceTree = "<group>"; };
+		F1000026 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F1000027 /* CountryCodePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodePickerView.swift; sourceTree = "<group>"; };
+		F1000028 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		F1000029 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		F100002A /* ListingsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsCache.swift; sourceTree = "<group>"; };
+		F100002B /* EditInstrumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInstrumentView.swift; sourceTree = "<group>"; };
+		F100002C /* EditRentalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRentalView.swift; sourceTree = "<group>"; };
+		F100002D /* MemphisIllustrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemphisIllustrations.swift; sourceTree = "<group>"; };
+		F100002E /* RentalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalDetailView.swift; sourceTree = "<group>"; };
+		F100002F /* LocationChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationChipView.swift; sourceTree = "<group>"; };
+		F1000030 /* CheckoutHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutHelpers.swift; sourceTree = "<group>"; };
+		E2000000 /* EncoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2000001 /* AppUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserTests.swift; sourceTree = "<group>"; };
+		F2000002 /* ModelsCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsCodableTests.swift; sourceTree = "<group>"; };
+		F2000003 /* CheckoutHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutHelpersTests.swift; sourceTree = "<group>"; };
+		F2000004 /* CountryDialCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDialCodeTests.swift; sourceTree = "<group>"; };
+		F2000005 /* LocationChipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationChipTests.swift; sourceTree = "<group>"; };
+		F2000006 /* ColorHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHexTests.swift; sourceTree = "<group>"; };
+		F2000007 /* RoundedCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTests.swift; sourceTree = "<group>"; };
+		F2000008 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		F2000009 /* SupabaseClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClientTests.swift; sourceTree = "<group>"; };
+		F200000B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = "Developer/Library/Frameworks/XCTest.framework"; sourceTree = DEVELOPER_DIR; };
+		F2FFFF01 /* Encore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Encore.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		P2000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B200000B /* XCTest in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P1000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G1000000 /* Encore */ = {
+			isa = PBXGroup;
+			children = (
+				F2FFFF01 /* Encore.xcconfig */,
+				G1000001 /* App */,
+				G1000002 /* Network */,
+				G1000003 /* Models */,
+				G1000004 /* Views */,
+				G1000005 /* Extensions */,
+				G100000C /* Helpers */,
+				G1000006 /* Resources */,
+				G1000007 /* Products */,
+				G2000000 /* EncoreTests */,
+			);
+			path = Encore;
+			sourceTree = "<group>";
+		};
+		G100000C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F1000030 /* CheckoutHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		G2000000 /* EncoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				G2000001 /* Models */,
+				G2000002 /* Helpers */,
+				G2000003 /* Extensions */,
+				G2000004 /* Mocks */,
+				G2000005 /* Integration */,
+			);
+			path = "../EncoreTests";
+			sourceTree = "<group>";
+		};
+		G2000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2000001 /* AppUserTests.swift */,
+				F2000002 /* ModelsCodableTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G2000002 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2000003 /* CheckoutHelpersTests.swift */,
+				F2000004 /* CountryDialCodeTests.swift */,
+				F2000005 /* LocationChipTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		G2000003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2000006 /* ColorHexTests.swift */,
+				F2000007 /* RoundedCornerTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		G2000004 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F2000008 /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		G2000005 /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				F2000009 /* SupabaseClientTests.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		G1000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F1000001 /* EncoreApp.swift */,
+				F1000002 /* AuthManager.swift */,
+				F100001C /* FavoritesStore.swift */,
+				F1000026 /* LocationManager.swift */,
+				F1000003 /* LanguageManager.swift */,
+				F1000029 /* ThemeManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G1000002 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F1000004 /* SupabaseClient.swift */,
+				F1000005 /* StorageService.swift */,
+				F100002A /* ListingsCache.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		G1000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1000006 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G1000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				G1000008 /* Auth */,
+				G1000009 /* Renter */,
+				G100000A /* Host */,
+				G100000B /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G1000005 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1000011 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		G1000006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1000014 /* Assets.xcassets */,
+				F1000012 /* Strings.swift */,
+				F1000013 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G1000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1000000 /* Encore.app */,
+				E2000000 /* EncoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G1000008 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F1000007 /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		G1000009 /* Renter */ = {
+			isa = PBXGroup;
+			children = (
+				F1000008 /* BrowseView.swift */,
+				F1000016 /* CheckoutView.swift */,
+				F1000015 /* InstrumentDetailView.swift */,
+				F1000009 /* MyRentalsView.swift */,
+				F100002E /* RentalDetailView.swift */,
+				F100002C /* EditRentalView.swift */,
+				F100000A /* RenterProfileView.swift */,
+				F100000B /* RenterTabView.swift */,
+				F100001D /* FavoritesView.swift */,
+			);
+			path = Renter;
+			sourceTree = "<group>";
+		};
+		G100000A /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				F1000019 /* AddInstrumentView.swift */,
+				F100000C /* HostDashboardView.swift */,
+				F100000E /* HostBookingsView.swift */,
+				F100000D /* HostListingsView.swift */,
+				F100002B /* EditInstrumentView.swift */,
+				F100000F /* HostProfileView.swift */,
+				F1000010 /* HostTabView.swift */,
+				F100001B /* HostInsightsPlaceholderView.swift */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		G100000B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F1000017 /* RatingsView.swift */,
+				F1000018 /* ReviewsListView.swift */,
+				F100001A /* MessagesView.swift */,
+				F1000020 /* ConversationView.swift */,
+				F100001E /* EditProfileView.swift */,
+				F100001F /* PlaceholderSettingsView.swift */,
+				F1000021 /* HelpView.swift */,
+				F1000022 /* PrivacySettingsView.swift */,
+				F1000023 /* LegalView.swift */,
+				F1000024 /* UserReviewFormView.swift */,
+				F1000025 /* UserReviewsListView.swift */,
+				F1000027 /* CountryCodePickerView.swift */,
+				F100002F /* LocationChipView.swift */,
+				F1000028 /* ToastView.swift */,
+				F100002D /* MemphisIllustrations.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T2000001 /* EncoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2000002 /* Build configuration list for PBXNativeTarget "EncoreTests" */;
+			buildPhases = (
+				P2000001 /* Sources */,
+				P2000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2000001 /* PBXTargetDependency */,
+			);
+			name = EncoreTests;
+			productName = EncoreTests;
+			productReference = E2000000 /* EncoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		T1000001 /* Encore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1000002 /* Build configuration list for PBXNativeTarget "Encore" */;
+			buildPhases = (
+				P1000002 /* Sources */,
+				P1000001 /* Frameworks */,
+				P1000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Encore;
+			productName = Encore;
+			productReference = E1000000 /* Encore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		R1000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					T1000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C1000001 /* Build configuration list for PBXProject "Encore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = G1000000 /* Encore */;
+			productRefGroup = G1000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T1000001 /* Encore */,
+				T2000001 /* EncoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXTargetDependency section */
+		D2000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = T1000001 /* Encore */;
+			targetProxy = P2000003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		P2000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = R1000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = T1000001;
+			remoteInfo = Encore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		P1000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000014 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		P2000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2000001 /* AppUserTests.swift in Sources */,
+				B2000002 /* ModelsCodableTests.swift in Sources */,
+				B2000003 /* CheckoutHelpersTests.swift in Sources */,
+				B2000004 /* CountryDialCodeTests.swift in Sources */,
+				B2000005 /* LocationChipTests.swift in Sources */,
+				B2000006 /* ColorHexTests.swift in Sources */,
+				B2000007 /* RoundedCornerTests.swift in Sources */,
+				B2000008 /* MockURLProtocol.swift in Sources */,
+				B2000009 /* SupabaseClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P1000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000001 /* EncoreApp.swift in Sources */,
+				B1000002 /* AuthManager.swift in Sources */,
+				B1000003 /* LanguageManager.swift in Sources */,
+				B1000004 /* SupabaseClient.swift in Sources */,
+				B1000005 /* StorageService.swift in Sources */,
+				B1000006 /* Models.swift in Sources */,
+				B1000007 /* AuthView.swift in Sources */,
+				B1000008 /* BrowseView.swift in Sources */,
+				B1000009 /* MyRentalsView.swift in Sources */,
+				B100002E /* RentalDetailView.swift in Sources */,
+				B100002B /* EditInstrumentView.swift in Sources */,
+				B100002C /* EditRentalView.swift in Sources */,
+				B100000A /* RenterProfileView.swift in Sources */,
+				B100000B /* RenterTabView.swift in Sources */,
+				B1000015 /* InstrumentDetailView.swift in Sources */,
+				B1000016 /* CheckoutView.swift in Sources */,
+				B1000017 /* RatingsView.swift in Sources */,
+				B1000018 /* ReviewsListView.swift in Sources */,
+				B1000019 /* AddInstrumentView.swift in Sources */,
+				B100001A /* MessagesView.swift in Sources */,
+				B1000020 /* ConversationView.swift in Sources */,
+				B100001B /* HostInsightsPlaceholderView.swift in Sources */,
+				B100001C /* FavoritesStore.swift in Sources */,
+				B100001D /* FavoritesView.swift in Sources */,
+				B100001E /* EditProfileView.swift in Sources */,
+				B100001F /* PlaceholderSettingsView.swift in Sources */,
+				B1000021 /* HelpView.swift in Sources */,
+				B1000022 /* PrivacySettingsView.swift in Sources */,
+				B1000023 /* LegalView.swift in Sources */,
+				B1000024 /* UserReviewFormView.swift in Sources */,
+				B1000025 /* UserReviewsListView.swift in Sources */,
+				B1000026 /* LocationManager.swift in Sources */,
+				B1000027 /* CountryCodePickerView.swift in Sources */,
+				B100002F /* LocationChipView.swift in Sources */,
+				B1000028 /* ToastView.swift in Sources */,
+				B1000029 /* ThemeManager.swift in Sources */,
+				B100002A /* ListingsCache.swift in Sources */,
+				B100002D /* MemphisIllustrations.swift in Sources */,
+				B100000C /* HostDashboardView.swift in Sources */,
+				B100000D /* HostListingsView.swift in Sources */,
+				B100000E /* HostBookingsView.swift in Sources */,
+				B100000F /* HostProfileView.swift in Sources */,
+				B1000010 /* HostTabView.swift in Sources */,
+				B1000011 /* Extensions.swift in Sources */,
+				B1000012 /* Strings.swift in Sources */,
+				B1000030 /* CheckoutHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FFFF01 /* Encore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = G387QXCA4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Encore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Encore;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "---com.johncasildo.encore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G387QXCA4S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johncasildo.encore.EncoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encore.app/Encore";
+			};
+			name = Debug;
+		};
+		C2000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G387QXCA4S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johncasildo.encore.EncoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encore.app/Encore";
+			};
+			name = Release;
+		};
+		C1000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FFFF01 /* Encore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = G387QXCA4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Encore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Encore;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "---com.johncasildo.encore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1000001 /* Build configuration list for PBXProject "Encore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1000003 /* Debug */,
+				C1000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1000002 /* Build configuration list for PBXNativeTarget "Encore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1000005 /* Debug */,
+				C1000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2000002 /* Build configuration list for PBXNativeTarget "EncoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2000005 /* Debug */,
+				C2000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = R1000001 /* Project object */;
+}

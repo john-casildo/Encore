@@ -1,0 +1,7 @@
+// Supabase settings for the app target.
+// Real values live in Secrets.xcconfig, which is git-ignored:
+//   cp Config/Secrets.example.xcconfig Config/Secrets.xcconfig
+SUPABASE_HOST =
+SUPABASE_ANON_KEY =
+
+#include? "Secrets.xcconfig"
